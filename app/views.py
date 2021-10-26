@@ -194,7 +194,7 @@ class MyCart(APIView):
 
 
 
-
+#https://www.geeksforgeeks.org/how-to-validate-pan-card-number-using-regular-expression/?ref=lbp
 
 
 
