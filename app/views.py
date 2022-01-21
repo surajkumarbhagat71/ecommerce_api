@@ -197,6 +197,24 @@ class MyCart(APIView):
 #https://www.geeksforgeeks.org/how-to-validate-pan-card-number-using-regular-expression/?ref=lbp
 
 
+# direct json data send by Resonse 
+# class UserProfile(APIView):
+#     permission_classes = (IsAuthenticated,)
+#     def get(self,request):
+#         list = []
+#         user = User.objects.get(username = request.user)
+#         get_state = user.employees_id.states.all()
+
+#         st = StateSerializer(get_state,many=True)
+
+#         data ={
+#             'username':user.username,
+#             'email':user.employees_id.email,
+#             'state':user.employees_id.state.state_name,
+#             'states':(st.data)
+#         }
+#         list.append(data)
+#         return Response(list)
 
 
 
