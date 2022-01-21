@@ -65,35 +65,4 @@ class Logout(APIView):
         data.blacklist()
         return Response("Successful Logout", status=status.HTTP_200_OK)
     
-    from django.shortcuts import render
-
-from rest_framework.permissions import IsAuthenticated , IsAdminUser
-
-from rest_framework.response import Response
-
-from rest_framework.views import APIView
-
-from django.contrib.auth.models import User
-
-from django.contrib.auth import authenticate, login, logout
-
-from rest_framework_simplejwt.views import TokenObtainPairView
-
-from django.contrib.auth.hashers import make_password
-
-from rest_framework import status
-
-from .serializers import *
-
-from rest_framework_simplejwt.tokens import RefreshToken
-
-
-from rest_framework_simplejwt.views import (
-    TokenObtainPairView,
-    TokenRefreshView,
-    TokenVerifyView
-)
-from django.contrib.auth.hashers import (
-    check_password, is_password_usable, make_password,
-)
-
+    
